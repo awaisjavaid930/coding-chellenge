@@ -1,0 +1,1 @@
+<p>Please Click on this link :  {{ url('/').'/api/verfied?email='.$user->email }} </p>
