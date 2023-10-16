@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "82e159ef-0419-4424-a888-37ac8a47afd0",
+		"name": "project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29537812",
+		"_collection_link": "https://martian-station-991970.postman.co/workspace/My-Workspace~08c31e2c-b6f5-4307-89b1-000d5ac99076/collection/29537812-82e159ef-0419-4424-a888-37ac8a47afd0?action=share&source=collection_link&creator=29537812"
+	},
+	"item": [
+		{
+			"name": "Todo Save",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzczOTk2LCJleHAiOjE2OTczNzc1OTYsIm5iZiI6MTY5NzM3Mzk5NiwianRpIjoiaFdlYU04UXY5Z3I0Wm5RVyIsInN1YiI6IjQyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Rx7aqby76RJSzqMhqC1mB66-NDsEbKGFkEM704NoH7s"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "awais",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "lorem",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}/todo"
+			},
+			"response": []
+		},
+		{
+			"name": "Todo Detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzczOTk2LCJleHAiOjE2OTczNzc1OTYsIm5iZiI6MTY5NzM3Mzk5NiwianRpIjoiaFdlYU04UXY5Z3I0Wm5RVyIsInN1YiI6IjQyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Rx7aqby76RJSzqMhqC1mB66-NDsEbKGFkEM704NoH7s"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/todo/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Todo Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzczOTk2LCJleHAiOjE2OTczNzc1OTYsIm5iZiI6MTY5NzM3Mzk5NiwianRpIjoiaFdlYU04UXY5Z3I0Wm5RVyIsInN1YiI6IjQyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Rx7aqby76RJSzqMhqC1mB66-NDsEbKGFkEM704NoH7s"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_method",
+							"value": "put",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "awais2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "awais2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}/todo/6"
+			},
+			"response": []
+		},
+		{
+			"name": "Todo Delete ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzcyMDUwLCJleHAiOjE2OTczNzU2NTAsIm5iZiI6MTY5NzM3MjA1MCwianRpIjoiMmE2TU1WQW1ySVpIWVd2TyIsInN1YiI6IjI2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ENDRIfFRnt4JcHb72cciEG8C5GnzGrMc7vk-l7DQ-bU"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_method",
+							"value": "delete",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}/todo/6"
+			},
+			"response": []
+		}
+	]
+}
